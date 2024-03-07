@@ -15,4 +15,4 @@ for n in range(1, 1001):
         i = i + 1
         sum = sumSquaredDigits(str(sum))
 
-    print(n, '-', sum, '-', i)
+    print(n, 'goes to', sum, 'through', i, 'steps')
