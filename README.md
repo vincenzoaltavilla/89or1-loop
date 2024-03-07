@@ -1,7 +1,7 @@
 Being fascinated by the pseudo-equality problem solved in https://github.com/vincenzoaltavilla/fib-seq-vs-miles-to-kms,
 I asked Chat GPT to tell me other pseudo-equalities between natural numbers.
 
-It answered me with another outstanding fact:
+It answered me with this great statement:
 A number chain is created by continuously adding the square of the digits in a number to form a new number until it has been seen before.
 
 For example,
