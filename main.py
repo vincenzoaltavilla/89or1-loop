@@ -1,4 +1,4 @@
-def sumDigits(n):
+def sumSquaredDigits(n):
     sum = 0
     for digit in n:
         digit = int(digit)
@@ -8,11 +8,11 @@ def sumDigits(n):
 
 for n in range(1, 1001):
     n = str(n)
-    sum = sumDigits(n)
+    sum = sumSquaredDigits(n)
     i = 0
 
     while sum != 89 and sum != 1:
         i = i + 1
-        sum = sumDigits(str(sum))
+        sum = sumSquaredDigits(str(sum))
 
     print(n, '-', sum, '-', i)
