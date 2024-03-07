@@ -1,20 +1,18 @@
-
-for n in range(1000):
-    n = n+1
-    tot = 0
-    n = str(n)
-
+def sumDigits(n):
+    sum = 0
     for digit in n:
         digit = int(digit)
-        tot = tot + (digit * digit)
+        sum = sum + (digit * digit)
+    return sum
 
+
+for n in range(1, 1001):
+    n = str(n)
+    sum = sumDigits(n)
     i = 0
-    while tot != 89 and tot != 1:
-        i = i+1
-        sum2 = str(tot)
-        tot = 0
-        for digit2 in sum2:
-            digit2 = int(digit2)
-            tot = tot + (digit2 * digit2)
 
-    print(n, '-', tot, '-', i)
+    while sum != 89 and sum != 1:
+        i = i + 1
+        sum = sumDigits(str(sum))
+
+    print(n, '-', sum, '-', i)
